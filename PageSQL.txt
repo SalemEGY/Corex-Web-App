@@ -1,0 +1,45 @@
+DROP TABLE IF EXISTS `charge_p`;
+CREATE TABLE `charge_p` (
+  `Username` varchar(255) DEFAULT NULL,
+  `Numberofcard` varchar(20) DEFAULT NULL,
+  `Value` int(15) DEFAULT NULL,
+  `UID` bigint(20) DEFAULT NULL,
+  `case_card` set('','ClaimNow','Done','Failed','Waiting') DEFAULT 'Waiting',
+  `FailReason` varchar(255) DEFAULT 'None'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+###################################
+DROP TABLE IF EXISTS `paypal`;
+CREATE TABLE `paypal` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `PaymentId` varchar(255) NOT NULL,
+  `UID` int(11) DEFAULT NULL,
+  `Username` int(255) NOT NULL,
+  `id_item` int(11) DEFAULT NULL,
+  `status` varchar(255) NOT NULL,
+  PRIMARY KEY (`ID`,`PaymentId`)
+) ENGINE=InnoDB AUTO_INCREMENT=63 DEFAULT CHARSET=utf8;
+################################
+DROP TABLE IF EXISTS `shop`;
+CREATE TABLE `shop` (
+  `name_item` varchar(255) NOT NULL,
+  `id_item` int(11) DEFAULT NULL,
+  `value_item` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `desc_item` text,
+  `img_item` varchar(255) DEFAULT NULL,
+  `txtQuantity` int(11) DEFAULT NULL,
+  PRIMARY KEY (`name_item`) USING BTREE
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+
+-- ----------------------------
+-- Records of shop
+-- ----------------------------
+INSERT INTO `shop` VALUES ('Stone +8', '730008', '120', 'this can use to compose items plus', 'Content/image/730008.png', '1');
+INSERT INTO `shop` VALUES ('Stone +4', '730004', '20', 'this can use to compose items plus', 'Content/image/730004.png', '1');
+###############################################
+DROP TABLE IF EXISTS `rankings`;
+CREATE TABLE `rankings` (
+  `UID` bigint(16) unsigned DEFAULT NULL,
+  `Name` varchar(32) DEFAULT NULL,
+  `Level` bigint(16) DEFAULT NULL,
+  `Donation` bigint(25) unsigned DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
