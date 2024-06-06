@@ -17,7 +17,7 @@
   </div>
        <div class="container main-block">
       <div class="motto-wrap">
-        <div class="label cc-light">Welcome to CorexConquer</div>
+        <div class="label cc-light">Welcome to <%: System.Configuration.ConfigurationManager.AppSettings["ServerName"] %></div>
         <div class="paragraph-bigger">The best fully custom 5517 private server on the market.<br></div>
       </div>
       <div class="divider"></div>
@@ -53,7 +53,7 @@
       </div>
       <div class="w-row">
         <div class="column w-col w-col-8">
-          <h1 class="sidebar-heading">LATEST NEWS FROM CorexConquer</h1>
+          <h1 class="sidebar-heading">LATEST NEWS FROM <%: System.Configuration.ConfigurationManager.AppSettings["ServerName"] %></h1>
           <div id="news">
 		  		  		            		<div class="column--all-news w-row">
             		  <div class="column-news-image w-col w-col-3"><img src="./CorexConquer _ Free to Play Fantasy MMORPG - PLAY-COREX.COM_files/news-image.png" width="440" alt="" class="news-image"><a href="/news/11" class="read-more w-button">read full thread</a></div>
@@ -157,9 +157,9 @@ The Hunt Bot will automatically engage in activities that will help you level up
           <h1 class="sidebar-heading">Discord</h1>
           <div class="w-embed w-iframe"><iframe src="https://discord.com/widget?id=1061702266828099594&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>
           <h1 class="sidebar-heading">Facebook</h1>
-          <div class="w-embed w-iframe"><iframe src="./CorexConquer _ Free to Play Fantasy MMORPG - PLAY-COREX.COM_files/likebox.html" scrolling="no" allowtransparency="true" frameborder="0" width="100%" height="200"></iframe></div>
+          <div class="w-embed w-iframe"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKRZTv.pro&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=26254533780797544" width="340" height="331" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" runat="server"></iframe></div>
           <h1 class="sidebar-heading">Video Spotlight</h1>
-          <div style="padding-top:56.17021276595745%" id="w-node-a9bd9acc9340-f8d39a13" class="w-embed-youtubevideo"><iframe width="354" height="198" src="https://www.youtube.com/embed/Apqnknhs5Ek" title="CorexConquer New Server" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          <div style="padding-top:5.17021276595745%" id="w-node-a9bd9acc9340-f8d39a13" class="w-embed-youtubevideo"><iframe width="354" height="398" src="https://www.youtube.com/embed/Apqnknhs5Ek" title="CorexConquer New Server" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen runat="server"></iframe></div>
 		  <h1 class="sidebar-heading">Supporters</h1>
 		       <div class="w-embed" style="text-align:center;"><a href="https://www.elitepvpers.com/forum/co2-pserver-advertising/4688364-zconquer-lastversion-vote4vip-play2win-truly-free-all.html" target="_blank"><img src="./CorexConquer _ Free to Play Fantasy MMORPG - PLAY-COREX.COM_files/elitepvpers.png"></a></div>
         </div>

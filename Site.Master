@@ -4,7 +4,7 @@
 
 <html lang="en">
 <head runat="server">
-     <title><%: Page.Title %> | <%: CorexPage.SiteMaster.ServerName %> .</title>
+     <title><%: Page.Title %> | <%: System.Configuration.ConfigurationManager.AppSettings["ServerName"] %> .</title>
   <meta name="keywords" content="CorexConquer, Conquer Private Server, conquer online private server, Conquer no bot, conquer no bot server, conquer no bot private server, Conquer Online PVP Server, PVP, Conquer, conquer privado, conquer online, conquer server, conquer online server"> 
   <meta content="Embark on an adventure of CorexConquer! Hardcore PVE &amp; PvP. Conquer Online Private Server." name="description">
   <meta content="width=device-width, initial-scale=1" name="viewport" initial-scale=1.0>
@@ -69,7 +69,12 @@
                                    </span> Players are playing! <a href="/Register.aspx" class="logo-link link inline-link">Join Now</a></div>
         		</div>
         <div class="div-block-2">
-          <div class="topbar-text">follow us:&nbsp;</div><a href="https://discordapp.com/widget?id=992034442723983431&amp;theme=dark" class="link social-icons">discord</a><a href="https://www.youtube.com/watch?v=Apqnknhs5Ek" class="link social-icons">youtube</a><a href="/" class="link social-icons">twitter</a><a href="https://www.facebook.com/CorexConquer" class="link social-icons">facebook</a><a href="/" class="link social-icons">instagram</a></div>
+          <div class="topbar-text">follow us:&nbsp;</div>
+            <a href="<%: System.Configuration.ConfigurationManager.AppSettings["Discord"] %>" target="_blank" class="link social-icons">discord</a>
+            <a href="<%: System.Configuration.ConfigurationManager.AppSettings["Youtube"] %>" target="_blank" class="link social-icons">youtube</a>
+            <a href="<%: System.Configuration.ConfigurationManager.AppSettings["Twitter"] %>" target="_blank" class="link social-icons">twitter</a>
+            <a href="<%: System.Configuration.ConfigurationManager.AppSettings["Facebook"] %>" target="_blank" class="link social-icons">facebook</a>
+            <a href="<%: System.Configuration.ConfigurationManager.AppSettings["Instagram"] %>" target="_blank" class="link social-icons">instagram</a></div>
       </div>
     </div>
   </div>
@@ -120,17 +125,17 @@
               <p class="paragraph-tiny"> Developed For: <a target="_blank" href="https://www.facebook.com/groups/cocoders" class="link inline-link"><asp:Label ID="Label2" runat="server" Text="Conquer Developers"></asp:Label></a>  Members !</p>
           </div>
           <div class="footer-column-right w-col w-col-3">
-            <h5>Quick Links</h5><a href="/register" class="link">Register</a><a href="/download" class="link">Download</a><a href="/account" class="link">My Account</a><!--<a href="/vote" class="link">Vote for CPs</a>--></div>
+            <h5>Quick Links</h5><a href="/Register.aspx" class="link">Register</a><a href="/Download.aspx" class="link">Download</a><a href="/UserCP.aspx" class="link">My Account</a><!--<a href="/vote" class="link">Vote for CPs</a>--></div>
           <div class="footer-column-right w-col w-col-3">
-            <h5>Community</h5><a href="https://www.facebook.com/CorexConquer" class="link">Facebook</a><a href="https://discordapp.com/widget?id=992034442723983431&amp;theme=dark" class="link">Discord</a></div>
+            <h5>Community</h5><a href="<%: System.Configuration.ConfigurationManager.AppSettings["Facebook"] %>" target="_blank" class="link">Facebook</a><a href="<%: System.Configuration.ConfigurationManager.AppSettings["Discord"] %>" target="_blank" class="link">Discord</a></div>
           <div class="footer-column-right w-col w-col-3">
             <h5>Support</h5><a href="/#" class="link">File a report</a><a href="/#" class="link">Report an Issue</a><a href="/#" class="link">Contact Us</a></div>
         </div>
       </div>
       <div class="div-block-6 w-clearfix">
-        <div class="paragraph-tiny copyright">© 2024 CorexConquer. All Rights Reserved.</div>
+        <div class="paragraph-tiny copyright">© 2024 <%: System.Configuration.ConfigurationManager.AppSettings["ServerName"] %>. All Rights Reserved.</div>
         <div class="paragraph-tiny copyright right"><a href="/#" class="link">Privacy Policy</a></div>
-        <div class="paragraph-tiny copyright right"><a href="/terms" class="link">Terms of Service</a></div>
+        <div class="paragraph-tiny copyright right"><a href="/#" class="link">Terms of Service</a></div>
       </div>
     </div>
   </div>

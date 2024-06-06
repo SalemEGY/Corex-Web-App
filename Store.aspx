@@ -40,7 +40,7 @@ th {
     <div class="intro-content cc-homepage play-page">
       <div data-w-id="86e64837-0616-515b-4568-76c147234d20" class="intro-text" style="filter: blur(0px);">
         <div class="heading-jumbo-medium">Donate Store</div>
-        <div class="heading-jumbo"><%: CorexPage.SiteMaster.ServerName %></div>
+        <div class="heading-jumbo"><%: System.Configuration.ConfigurationManager.AppSettings["ServerName"] %></div>
       </div>
     </div>
   </div>
@@ -53,7 +53,7 @@ th {
               <div class="store__main w-col-12">
    <div class="block">
      <header class="block__header">
-       <h1><%: CorexPage.SiteMaster.ServerName %> - Store</h1>
+       <h1><%: System.Configuration.ConfigurationManager.AppSettings["ServerName"] %> - Store</h1>
        <div class="clear-fix"></div>
      </header>
                 <div class="block__body">

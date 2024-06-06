@@ -11,19 +11,19 @@
             <div class="w-col w-col-4">
             <div class="heading-jumbo-small play">DIRECT</div>
             <div class="label cc-light">.exe file</div><img src="./CorexConquer _ Free to Play Fantasy MMORPG - PLAY-COREX.COM_files/play-page-icons-exe.png" class="image-3">
-            <a href="<%: CorexPage.Download.DirectDownload %>" data-w-id="86e64837-0616-515b-4568-76c147234d27" style="filter: brightness(102.278%); transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: filter;" class="button-play small-button w-inline-block">
+            <a href="<%: System.Configuration.ConfigurationManager.AppSettings["DirectDownload"] %>" data-w-id="86e64837-0616-515b-4568-76c147234d27" style="filter: brightness(102.278%); transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: filter;" class="button-play small-button w-inline-block">
               <div>download</div>
             </a>
           </div><div class="w-col w-col-4">
             <div class="heading-jumbo-small play">GOOGLE DRIVE</div>
             <div class="label cc-light">.exe file</div><img src="./CorexConquer _ Free to Play Fantasy MMORPG - PLAY-COREX.COM_files/play-page-icons-exe.png" class="image-3">
-            <a href="<%: CorexPage.Download.GOOGLEDRIVE %>" data-w-id="86e64837-0616-515b-4568-76c147234d27" style="filter: brightness(102.268%); transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: filter;" class="button-play small-button w-inline-block">
+            <a href="<%: System.Configuration.ConfigurationManager.AppSettings["GOOGLEDRIVE"] %>" data-w-id="86e64837-0616-515b-4568-76c147234d27" style="filter: brightness(102.268%); transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: filter;" class="button-play small-button w-inline-block">
               <div>download</div>
             </a>
           </div><div class="w-col w-col-4">
             <div class="heading-jumbo-small play">MEDIAFIRE</div>
             <div class="label cc-light">.exe file</div><img src="./CorexConquer _ Free to Play Fantasy MMORPG - PLAY-COREX.COM_files/play-page-icons-exe.png" class="image-3">
-            <a href="<%: CorexPage.Download.MEDIAFIRE %>" data-w-id="86e64837-0616-515b-4568-76c147234d27" style="filter: brightness(102.265%); transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: filter;" class="button-play small-button w-inline-block">
+            <a href="<%: System.Configuration.ConfigurationManager.AppSettings["MEDIAFIRE"] %>" data-w-id="86e64837-0616-515b-4568-76c147234d27" style="filter: brightness(102.265%); transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: filter;" class="button-play small-button w-inline-block">
               <div>download</div>
             </a>
           </div>        </div>
