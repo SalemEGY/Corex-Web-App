@@ -88,7 +88,7 @@
 	  <!--<a href="/vote" class="navigation-item w-nav-link">VOTE</a>-->
 	  <a href="/Store.aspx" class="navigation-item w-nav-link">DONATE</a>
 	  </nav>
- <% if (CorexPage.Common.User == null ) { %><a href="/Login.aspx" class="button-play smaller-button w-inline-block">
+ <% if (Session["Username"] == null ) { %><a href="/Login.aspx" class="button-play smaller-button w-inline-block">
   <div class="text-block-3">Log In</div>
 </a><% }
           else

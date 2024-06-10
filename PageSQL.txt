@@ -43,3 +43,7 @@ CREATE TABLE `rankings` (
   `Level` bigint(16) DEFAULT NULL,
   `Donation` bigint(25) unsigned DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+##################################
+############NEW_UPDATE_v1.5#############
+ALTER TABLE `accounts`
+ADD COLUMN `sessionId` varchar(255);
