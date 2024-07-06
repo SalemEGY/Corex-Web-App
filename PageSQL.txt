@@ -16,8 +16,9 @@ CREATE TABLE `paypal` (
   `Username` int(255) NOT NULL,
   `id_item` int(11) DEFAULT NULL,
   `status` varchar(255) NOT NULL,
+  `cart` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`ID`,`PaymentId`)
-) ENGINE=InnoDB AUTO_INCREMENT=63 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=105 DEFAULT CHARSET=utf8;
 ################################
 DROP TABLE IF EXISTS `shop`;
 CREATE TABLE `shop` (
